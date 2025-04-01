@@ -12,4 +12,7 @@ app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 
+const crimeRoutes = require('./routes/crimeRoutes');
+app.use('/api/crime', crimeRoutes);
+
 module.exports = app;
