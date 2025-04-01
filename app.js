@@ -15,4 +15,7 @@ app.use('/api/auth', authRoutes);
 const crimeRoutes = require('./routes/crimeRoutes');
 app.use('/api/crime', crimeRoutes);
 
+const missingPersonRoutes = require('./routes/missingPersonRoutes');
+app.use('/api/missing', missingPersonRoutes);
+
 module.exports = app;
